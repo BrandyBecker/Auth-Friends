@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import {connect} from "react-redux"
 import {addFriend} from "../actions"
+import '../App.css'
 
 const Form = (props) => {
     const [newFriend, setNewFriend] = useState({

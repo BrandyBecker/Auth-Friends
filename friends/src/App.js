@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <Router>
         <>
-          <div>
-            <Link to="/login">Login</Link>
+          <div className="loginCSS">
+            <Link to="/login" className="loginLink">Login</Link>
           </div>
         </>
         <Switch>

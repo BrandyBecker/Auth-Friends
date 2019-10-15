@@ -65,3 +65,19 @@
   text-align: center;
   color: dodgerblue;
 }
+
+.loginLink{
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.loginCSS{
+  background: white;
+  text-align: right;
+  padding: 2rem;
+  opacity: 0.9;
+}
+.formCSS{
+  background: white;
+}
