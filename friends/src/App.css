@@ -61,6 +61,7 @@
 }
 .cardCSS:hover{
   transform: scale(1.1);;
+  cursor: pointer;
 }
 
 .loaderCSS{
@@ -79,10 +80,12 @@
   font-weight: bold;
   text-decoration: none;
   font-family: 'Long Cang', cursive;
+  transition: background-color 2s ease-out;
 }
 .loginLink:hover{
   text-decoration: none;
   color: lightseagreen;
+  cursor: pointer;
 }
 
 .loginCSS{
@@ -91,6 +94,7 @@
   padding: 1rem;
   opacity: 0.9;
   text-decoration: none;
+ 
 }
 
 .formCSS{
