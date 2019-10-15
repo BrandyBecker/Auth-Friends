@@ -13,6 +13,7 @@ import { Provider } from "react-redux";
 import reducer from "./reducer";
 //import bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 const store = createStore(reducer, applyMiddleware(thunk));
 

@@ -3,6 +3,7 @@ import FriendCard from './FriendCard'
 import {fetchData} from '../actions';
 import {connect} from 'react-redux';
 import Form from './Form'
+import Loader from 'react-loader-spinner'
 
 const FriendList = props => {
     useEffect(()=> {
@@ -10,7 +11,17 @@ const FriendList = props => {
     }, [])
     if (props.isFetching){
         return (
-            <div> " You've got a friend in me! 🤠" </div>
+    
+            <div className="loaderCSS"> 
+            <Loader
+            type="ThreeDots"
+            color="#00000"
+            height={100}
+            width={100}
+            timeout={3000} 
+            />
+            " You've got a friend in me! 🤠" </div>
+            
         )
     }
     console.log(props.friends)

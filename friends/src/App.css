@@ -33,7 +33,8 @@
   background-image: url("http://www.gsfdcy.com/data/img/34/1505133-friends-wallpaper.jpg");
   background-size: cover;
   height:47rem;
-
+  opacity: 0.9;
+  height: 45rem;
 }
 .headerCSS{
   background: dodgerblue;
@@ -56,6 +57,7 @@
   opacity: 0.95;
   border: 5px ridge rgb(189, 189, 189) !important;
   border-radius: 1em !important;
+  
 }
 .cardCSS:hover{
   transform: scale(1.1);;
@@ -63,21 +65,49 @@
 
 .loaderCSS{
   text-align: center;
-  color: dodgerblue;
+  color: rgb(0, 0, 0);
+  font-family: 'Long Cang', cursive;
+  font-size: 3rem;
+  background: white;
+  opacity: 0.8;
+  padding: 15rem;
 }
 
 .loginLink{
-  color: rgb(0, 0, 0);
-  font-size: 2rem;
+  color: black;
+  font-size: 3rem;
   font-weight: bold;
+  text-decoration: none;
+  font-family: 'Long Cang', cursive;
+}
+.loginLink:hover{
+  text-decoration: none;
+  color: lightseagreen;
 }
 
 .loginCSS{
   background: white;
   text-align: right;
-  padding: 2rem;
+  padding: 1rem;
   opacity: 0.9;
+  text-decoration: none;
 }
+
 .formCSS{
-  background: white;
+  background: rgb(243, 243, 243);
+}
+
+.inputCSS{
+  border:2px solid white;
+  border-bottom: 3px solid rgb(134, 134, 134);
+  margin-left: 1rem;
+  border-radius: 1em;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.buttonCSS{
+  border: 3px solid lightgrey;
+  background: lightgrey;
+  border-radius: 2em;
 }

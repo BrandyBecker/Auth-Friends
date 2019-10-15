@@ -30,11 +30,12 @@ const Form = (props) => {
 
     return (
         <div className="formCSS">
+             
             <form>
-                <input name="name" type="text" placeholder="Friend's Name" onChange={handleChanges}></input>
-                <input name="age" type="text" placeholder="Friend's Age" onChange={handleChanges}></input>
-                <input name="email" type="email" placeholder="Friend's Email" onChange={handleChanges}></input>
-                <button type="submit" onClick={handleSubmit}>Submit Your Friend !</button>
+                <input className="inputCSS" name="name" type="text" placeholder="Friend's Name" onChange={handleChanges}></input>
+                <input className="inputCSS" name="age" type="text" placeholder="Friend's Age" onChange={handleChanges}></input>
+                <input className="inputCSS" name="email" type="email" placeholder="Friend's Email" onChange={handleChanges}></input>
+                <button className="buttonCSS" type="submit" onClick={handleSubmit}>Submit Your Friend !</button>
             </form>
         </div>
     )
