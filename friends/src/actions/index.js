@@ -5,9 +5,9 @@ export const START_FETCHING = "START_FETCHING";
 export const FETCH_SUCCESS = "FETCH_SUCCESS";
 export const FETCH_FAILURE = "FETCH_FAILURE";
 
-export const ADDING_SMURF_START = "ADDING_SMURF_SUCCESS"
-export const ADDING_SMURF_SUCCESS = "ADDING_SMURF_SUCCESS"
-export const ADDING_SMURF_FAILURE = "ADDING_SMURF_FAILURE"
+export const ADDING_FRIEND_START = "ADDING_FRIEND_SUCCESS"
+export const ADDING_FRIEND_SUCCESS = "ADDING_FRIEND_SUCCESS"
+export const ADDING_FRIENDF_FAILURE = "ADDING_FRIEND_FAILURE"
 
 
 export const fetchData = () => dispatch => {
@@ -22,14 +22,14 @@ export const fetchData = () => dispatch => {
 };
 
 export const addFriend = (friend) => dispatch => {
-    //dispatch({type: ADDING_SMURF_START})
+    //dispatch({type: ADDING_FRIEND_START})
     axiosWithAuth()
-        .post("http://localhost:3000/friends", friend)
+        .post("/api/friends", friend)
         .then(res => {
             console.log(res)
             dispatch({
-                type: ADDING_SMURF_SUCCESS,
-                payload: res
+                type: ADDING_FRIEND_SUCCESS,
+                payload: res.data
             })
         })
         .catch(err => console.log(err))

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import FriendCard from './FriendCard'
 import {fetchData} from '../actions';
 import {connect} from 'react-redux';
+import Form from './Form'
 
 const FriendList = props => {
     useEffect(()=> {
@@ -14,12 +15,15 @@ const FriendList = props => {
     }
     console.log(props.friends)
     return (
+       <>
+        <Form/>
         <div className="cardBG">
+            
             {props.error && <p>{props.error}</p>}
             {props.friends.map(data => (
                 <FriendCard key={data.id} data={data}/>
             ))}
-        </div>
+        </div></>
     )
 }
 

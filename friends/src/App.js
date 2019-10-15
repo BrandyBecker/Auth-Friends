@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import Login from './components/Login'
 import FriendList from './components/FriendList'
+import PrivateRoute from './components/PrivateRoute'
+
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
         </>
         <Switch>
           <Route path='/login' component={Login}/>
-          <Route path='/friendlist' component={FriendList}/>
+          <PrivateRoute path='/friendlist' component={FriendList}/>
         </Switch>
       </Router>
     </div>

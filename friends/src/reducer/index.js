@@ -1,5 +1,5 @@
 //import {} from actions
-import { START_FETCHING, FETCH_SUCCESS, FETCH_FAILURE } from "../actions";
+import { START_FETCHING, FETCH_SUCCESS, FETCH_FAILURE, ADDING_FRIEND_SUCCESS } from "../actions";
 
 const initialState = {
   friends: [],
@@ -29,6 +29,13 @@ const reducer = (state = initialState, action) => {
         error: action.payload,
         isFetching: false
       };
+      case ADDING_FRIEND_SUCCESS:
+          return {
+              ...state,
+              isFetching: false,
+              error: '',
+              friends:  action.payload
+          }
     default:
       return state;
   }
