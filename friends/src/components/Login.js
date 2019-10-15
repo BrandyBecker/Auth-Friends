@@ -44,7 +44,7 @@ class Login extends React.Component {
               className="inputCSS"
                 type="text"
                 name="username"
-                placeHolder="Username"
+                placeHolder="Username: User"
                 value={this.state.credentials.username}
                 onChange={this.handleChange}
               />
@@ -52,7 +52,7 @@ class Login extends React.Component {
               className="inputCSS"
                 type="password"
                 name="password"
-                placeHolder="Password"
+                placeHolder="Password: Pass"
                 value={this.state.credentials.password}
                 onChange={this.handleChange}
               />
