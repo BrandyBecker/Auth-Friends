@@ -20,3 +20,48 @@
 .App-link {
   color: #09d3ac;
 }
+
+
+.cardBG{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+  height: 15rem;
+}
+.App{
+  background-image: url("http://www.gsfdcy.com/data/img/34/1505133-friends-wallpaper.jpg");
+  background-size: cover;
+  height:47rem;
+
+}
+.headerCSS{
+  background: dodgerblue;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.formCSS{
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.cardCSS{
+  margin: 1.5em;
+  background: rgb(255, 255, 255) !important;
+  opacity: 0.95;
+  border: 5px ridge rgb(189, 189, 189) !important;
+  border-radius: 1em !important;
+}
+.cardCSS:hover{
+  transform: scale(1.1);;
+}
+
+.loaderCSS{
+  text-align: center;
+  color: dodgerblue;
+}

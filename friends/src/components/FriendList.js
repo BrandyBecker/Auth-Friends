@@ -12,6 +12,7 @@ const FriendList = props => {
             <div> " You've got a friend in me! 🤠" </div>
         )
     }
+    console.log(props.friends)
     return (
         <div className="cardBG">
             {props.error && <p>{props.error}</p>}
