@@ -11,39 +11,39 @@ let nextId = 7;
 let friends = [
   {
     id: 1,
-    name: 'Ben',
-    age: 30,
-    email: 'ben@lambdaschool.com'
+    name: 'Austin Powell',
+    age: 23,
+    email: 'austin.powellFSW@gmail.com'
   },
   {
     id: 2,
-    name: 'Austen',
-    age: 45,
-    email: 'austen@lambdaschool.com'
+    name: 'Jeremy Rogel',
+    age: 23,
+    email: 'jeremy.rogel@lambdaschool.com'
   },
   {
     id: 3,
-    name: 'Ryan',
-    age: 15,
-    email: 'ryan@lambdaschool.com'
+    name: 'Skyler Slatosch',
+    age: 23,
+    email: 'skyler.slatosch@lambdaschool.com'
   },
   {
     id: 4,
-    name: 'Dustin',
+    name: 'dAVE Inden',
     age: 25,
-    email: 'D-munny@lambdaschool.com'
+    email: 'dAVE.inden@lambdaschool.com'
   },
   {
     id: 5,
-    name: 'Sean',
-    age: 35,
-    email: 'sean@lambdaschool.com'
+    name: 'Lorenzo Simpson',
+    age: 23,
+    email: 'lorenzosimp@gmail.com'
   },
   {
     id: 6,
-    name: 'Michelle',
-    age: 67,
-    email: 'michelle@gmail.com'
+    name: 'Ian Schwartz',
+    age: 24,
+    email: 'ian.schwartz@lambdaschool.com'
   }
 ];
 
@@ -56,13 +56,13 @@ function authenticator(req, res, next) {
   if (authorization === token) {
     next();
   } else {
-    res.status(403).json({ error: 'User be logged in to do that.' });
+    res.status(403).json({ error: '🚫 User must be logged in to do that ! 🚫' });
   }
 }
 
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-  if (username === 'Lambda School' && password === 'i<3Lambd4') {
+  if (username === 'User' && password === 'Pass') {
     req.loggedIn = true;
     res.status(200).json({
       payload: token
@@ -70,7 +70,7 @@ app.post('/api/login', (req, res) => {
   } else {
     res
       .status(403)
-      .json({ error: 'Username or Password incorrect. Please see Readme' });
+      .json({ error: '🚫 Username or Password is Incorrect. Please see the Readme. 🚫' });
   }
 });
 
@@ -113,7 +113,7 @@ app.put('/api/friends/:id', authenticator, (req, res) => {
     ];
     res.send(friends);
   } else {
-    res.status(404).send({ msg: 'Friend not found' });
+    res.status(404).send({ msg: '🚫 Friend not found 🚫' });
   }
 });
 
