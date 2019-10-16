@@ -26,6 +26,7 @@ const FriendList = props => {
     }
     console.log(props.friends)
     return (
+        
        <>
         <Form/>
         <div className="cardBG">

@@ -9,6 +9,8 @@ export const ADDING_FRIEND_START = "ADDING_FRIEND_SUCCESS"
 export const ADDING_FRIEND_SUCCESS = "ADDING_FRIEND_SUCCESS"
 export const ADDING_FRIENDF_FAILURE = "ADDING_FRIEND_FAILURE"
 
+export const DELETE_SUCCESS = "DELETE_SUCCESS"
+
 
 export const fetchData = () => dispatch => {
   dispatch({ type: START_FETCHING });
@@ -34,4 +36,14 @@ export const addFriend = (friend) => dispatch => {
         })
         .catch(err => console.log(err))
 
+}
+
+
+export const deleteFriend = (friend) => dispatch => {
+  return axiosWithAuth()
+    .delete(`/api/friends/${friend}`)
+    .then(res => dispatch({
+      type: DELETE_SUCCESS,
+      payload: res.data
+    }))
 }

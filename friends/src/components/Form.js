@@ -10,7 +10,7 @@ const Form = (props) => {
         email: ""
     })
 
-    const handleSubmit = (e) => {
+    const handleSubmit = e => {
         const friend = {
             id: Date.now(), 
             name: newFriend.name,

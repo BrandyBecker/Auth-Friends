@@ -1,9 +1,15 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
+import {deleteFriend} from '../actions';
+import {connect} from 'react-redux'
 
 
 const FriendCard = (props) => {
-    console.log(props)
+
+  const handleDelete = (id) => {
+    props.deleteFriend(id)
+  }
+
     return (
         <Card className="cardCSS" style={{ width: '25rem' }}>
         <Card.Body>
@@ -12,9 +18,10 @@ const FriendCard = (props) => {
             🔢 <b>Age:</b> {props.data.age}<br/>
             📧 <b>Email:</b> {props.data.email}<br/>
           </Card.Text>
+          <button onClick={() => handleDelete(props.data.id)}>Delete Friend</button>
         </Card.Body>
       </Card>
     )
 }
 
-export default FriendCard
+export default connect(null, { deleteFriend })(FriendCard)

@@ -1,5 +1,5 @@
 //import {} from actions
-import { START_FETCHING, FETCH_SUCCESS, FETCH_FAILURE, ADDING_FRIEND_SUCCESS } from "../actions";
+import { START_FETCHING, FETCH_SUCCESS, FETCH_FAILURE, ADDING_FRIEND_SUCCESS, DELETE_SUCCESS } from "../actions";
 
 const initialState = {
   friends: [],
@@ -36,6 +36,11 @@ const reducer = (state = initialState, action) => {
               error: '',
               friends:  action.payload
           }
+          case DELETE_SUCCESS:
+            return {
+              ...state,
+              friends: action.payload
+            }
     default:
       return state;
   }
