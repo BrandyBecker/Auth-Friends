@@ -13,12 +13,12 @@ const FriendCard = (props) => {
     return (
         <Card className="cardCSS" style={{ width: '25rem' }}>
         <Card.Body>
+          <button className="deleteBtn" onClick={() => handleDelete(props.data.id)}>❌</button>
           <Card.Title> 📛 <u><b>Name:</b> {props.data.name}</u></Card.Title>
           <Card.Text>
             🔢 <b>Age:</b> {props.data.age}<br/>
             📧 <b>Email:</b> {props.data.email}<br/>
           </Card.Text>
-          <button onClick={() => handleDelete(props.data.id)}>Delete Friend</button>
         </Card.Body>
       </Card>
     )

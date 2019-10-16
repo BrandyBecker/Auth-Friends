@@ -11,6 +11,7 @@ const Form = (props) => {
     })
 
     const handleSubmit = e => {
+        e.preventDefault()
         const friend = {
             id: Date.now(), 
             name: newFriend.name,
