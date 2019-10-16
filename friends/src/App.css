@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+.cardBG{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+  height: 15rem;
+}
+.App{
+  background-image: url("http://www.gsfdcy.com/data/img/34/1505133-friends-wallpaper.jpg");
+  background-size: cover;
+  height:47rem;
+  opacity: 0.9;
+  height: 45rem;
+}
+.headerCSS{
+  background: dodgerblue;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.formCSS{
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.cardCSS{
+  margin: 1.5em;
+  background: rgb(255, 255, 255) !important;
+  opacity: 0.95;
+  border: 5px ridge rgb(189, 189, 189) !important;
+  border-radius: 1em !important;
+  
+}
+.cardCSS:hover{
+  transform: scale(1.1);;
+  cursor: pointer;
+}
+
+.loaderCSS{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Long Cang', cursive;
+  font-size: 3rem;
+  background: white;
+  opacity: 0.8;
+  padding: 15rem;
+}
+
+.loginLink{
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Long Cang', cursive;
+  transition: background-color 2s ease-out;
+}
+.loginLink:hover{
+  text-decoration: none;
+  color: lightseagreen;
+  cursor: pointer;
+}
+
+.loginCSS{
+  background: white;
+  text-align: right;
+  padding: 1rem;
+  opacity: 0.9;
+  text-decoration: none;
+ 
+}
+
+.formCSS{
+  background: rgb(243, 243, 243);
+}
+
+.inputCSS{
+  border:2px solid white;
+  border-bottom: 3px solid rgb(134, 134, 134);
+  margin-left: 1rem;
+  border-radius: 1em;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.buttonCSS{
+  border: 3px solid lightgrey;
+  background: lightgrey;
+  border-radius: 2em;
+}
+
+.deleteBtn{
+  margin-left: 19rem; 
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  background: rgb(255, 192, 192);
+  border: 3px ridge rgb(167, 61, 61);
+  border-radius: 2em;
+}
